@@ -2,16 +2,18 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family:'work sans',sans-serif,'Trebuchet MS';
+    font-weight: 400;
 } 
 
-header {
+header, footer {
+    font-size: 15px;
+    background-color: #0B1935;
+    color: white;
+    padding: 20px 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 10%;
-    background-color: black;
-    color: white;
-    position: fixed;
     width: 100%;
 }
 
@@ -19,30 +21,22 @@ header {
     cursor: pointer;
 }
 
-/* Styles for the toggle button icon */
+/* Styles for the toggle button */
 .toggle-button {
+    padding: 10px;
     position: absolute;
     top: 5px;
     right: 10px;
     display: none;
     flex-direction: column;
-    padding: 10px;
 }
 
 .toggle-button .bar {
-    width: 30px;
-    height: 3px;
     background-color: white;
     border-radius: 10px;
     margin: 4px 0;
-}
-
-li, a, button {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: white;
-    text-decoration:  none;
+    width: 30px;
+    height: 3px;
 }
 
 /* Styles for the navigation bar */
@@ -52,11 +46,13 @@ li, a, button {
 }
 
 .nav-links li {
-    display: inline-block;
     padding: 0px 20px;
+    display: inline-block;
 }
 
 .nav-links a {
+    text-decoration:  none;
+    color: white;
     transition: all 0.3s ease 0s;
 }
 
@@ -66,8 +62,10 @@ li, a, button {
 
 /* Styles for the contact button declaration, with a rgba color to drop the opacity  when the contact button is hovered */
 button {
-    padding: 1px 20px 2px 20px;
+    text-decoration:  none;
     background-color: rgba(0, 136, 169, 1);
+    color: white;
+    padding: 2px 20px 2px 20px;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -77,6 +75,121 @@ button {
 button:hover {
     background-color: rgba(0, 136, 169, 0.7);
 }
+
+h1 {
+    font-size: 40px;
+}
+main {
+    display: block;
+    padding: 0;
+}
+
+.about {
+    font-size: 15px;
+    background-color: #0B1935;
+    color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 100%;
+    display: flex;
+}
+
+.about-text {
+    font-size: 16px;
+    padding: 40px;
+    width: 50%;
+    float: left;
+}
+
+.about-text h1 {
+   padding-bottom: 20px;
+}
+.about-image {
+    padding: 20 px;
+    width: 50%;
+    height: fit-content;
+    float: right;
+}
+.work {
+    background-color:  #0B1935;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project {
+    background-color: #0B1935;
+    color: white;
+    padding: 20px;
+    display: block;
+}
+
+.project h2, h4 {
+    color: #4eddf380;
+    padding: 20px 0;
+}
+.project li {
+    padding: 20px;
+}
+.project a {
+    text-decoration: none;
+}
+.project img {
+    padding: 0;
+    width:50%;
+    height: fit-content;
+    float: right;
+}
+
+.contact {
+    font-size: 16px;
+    background-color: #0B1935;
+    color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 100%;
+    display: flex;
+}
+
+.contact a {
+    background-color: #0B1935;
+    color: white;
+    padding: 40px;
+    
+}
+
+footer {
+    text-align: center; 
+    justify-content: center;
+}
+
+footer p {
+    font-size: 13px;
+    padding: 20px;
+}
+
+/* Styles for social media links using W3 schools */
+.social-media-links li {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    justify-content: space-between;
+  
+}
+
+.fa {
+    text-decoration: none;
+    font-size: 20px;
+    width: 32px;
+    text-align: center;
+    color: #4eddf380;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
 
 @media screen and (max-width: 768px) {
 
@@ -100,12 +213,52 @@ button:hover {
     }
     
     .nav-links li {
+        padding: 10px;
         display: block;
         text-align: center;
-        padding: 10px ;
     }
     
+    /* Using js When toggle button is clicked, navigation bar will become visible */
     .nav-links.active {
         display: flex;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+    
+    h1, h2,h4 {
+        text-align: center;
+        padding: 20px;
+     }
+
+    .about-text {
+        order: 2;
+        font-size: 15px;
+        padding: 40px;
+        width: 100%;
+    }
+    
+
+    .about-image {
+        padding: 0;
+        width: 100%;
+        height: auto;
+        float: right;
+        justify-content: center;
+    }
+
+    .project img {
+        padding-bottom: 20px ;
+        width: 100%;
+        height: auto;
+        float: right;
+        justify-content: center;
+    }
+
+
+    footer {
+        display: block;
+        
     }
 }
