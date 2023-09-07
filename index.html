@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords"  content="Ted, Ted Fleuriscat"/>
     <meta name="description" content="Professional portfolio"/>
+    <!-- Icon library for social media -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href=""> <!--Add RESEST.CSS LINK -->
     <link rel="stylesheet" href="assets/styles/style.css">
     <title>Ted Fleuriscat</title>
@@ -14,60 +16,104 @@
 <body>
 
     <header>
-        <img src="######3" alt="logo"> <!--ADD LINK -->
+        <img src="#" alt=" Ted Fleuriscat logo "> <!--WORKING ON LOGO -->
 
-        <!--Here is the toggle button for my navbar for smaller screen-->
-        <a href="#nav-links" class="toggle-button">
+        <!-- Here is the toggle button for the navigation bar -->
+        <div class="toggle-button">
             <span class="bar"></span>
             <span class="bar"></span>
-        </a>
+        </div>
+        
 
-        <!--Here is my navigation bar-->
+        <!-- Here is the navigation bar -->
         <nav class="nav-links">
             <menu>
-                <li><a href="#bio"> Bio</a></li>  <!--ADD LINK -->
-                <li><a href="#work"> Work</a></li> <!--ADD LINK -->
-                <li><a href="#services"> Services</a></li> <!--ADD LINK -->
-                <li><a class="cta" href="#Contact"><button> Contact</button></a> <!--ADD LINK --></li>
+                <li><a href="#about"> About</a></li>  
+                <li><a href="#work"> Work</a></li> 
+                <li><a class="cta" href="#Contact"><button> Contact</button></a></li>
             </menu>
         </nav>
         
     </header>
 
-    <!--Here is my page's main content-->
+    <!--Here is the page's main content-->
     <main>
-        <section class="card" id="bio"> <!--ADD LINK -->
-            <h2>Bio</h2>
-            <img src="##" alt="##" class="##"> <!--ADD LINK -->
-            <p>This is my Bio</p>
+        <section class="about">
+            <div class="about-text">
+                <h1>About Me</h1>
+                <p>I'm a passionate full-stack web developer with a flair for crafting immersive online experiences. My journey into web development started with a fascination for the limitless possibilities of the digital world. Every day, I hone my skills in both front-end and back-end development to master languages like HTML, CSS, and JavaScript, along with diving deep into technologies like React, Node.js, and databases.</p> <br>
+                <p> Whether it's designing responsive user interfaces, optimizing website performance, or solving complex coding challenges, I'm driven by the desire to create seamless and user-friendly web solutions. I'm constantly exploring the latest trends and tools in the ever-evolving web landscape to deliver cutting-edge results.</p><br>
+                <p>Beyond the screen, I'm a dedicated problem solver, a detail-oriented coder, and a team player who loves collaborating to bring digital visions to life. I believe that the web has the power to transform businesses and enhance user experiences, and I'm committed to being a part of that transformative journey.</p><br>
+                <p>Let's connect and explore how I can be part of your success!</p><br>
+                <p>Ted</p><br>
+            </div>
+            <img src="assets/images/Ted-Fleuriscat.png" alt="Ted Fleuriscat profile picture" class="about-image">
+ 
         </section>
 
-        <section class="card" id="work"> <!--ADD LINK -->
-            <h2>Work</h2>
-            <img src="##" alt="##" class="##">
-            <p>This is my Work</p>
-        </section>
+        <section class="work"> 
+            <h1>Work</h1>
 
-        <section class="card" id="services"> <!--CHANGE NAME - ADD LINK -->
-            <h2>Services</h2>
-            <img src="##" alt="##" class="##">
-            <p>This is my Services</p>
+            <div class="project" id="horiseon-project">
+                <a href="https://tedfl.github.io/01-horiseon-website-project/">
+                    <h2> Horiseon Website</h2>
+                    <img src="assets/images/horiseon-website.png" href="https://tedfl.github.io/01-horiseon-website-project/" alt="Image of a website project" class="horiseon-project">
+                </a>
+                <h4>Project Overview</h4>
+                <p>In this project, I undertook the task of refactoring the base code for the Horiseon website a Marketing Agency, to ensure that all HTML elements adhere to accessibility standards. The goal was to make the website more inclusive and user-friendly for all visitors, including those with disabilities.</p>
+                <h4>Key Accomplishments</h4>
+                <ol>
+                    <li><strong>Accessibility First</strong>: I meticulously reviewed and adjusted the HTML structure to ensure proper semantic elements were used, headings were in sequential order, and alt attributes were added to all images. This effort enhances screen reader compatibility and overall usability.</li>
+                    <li><strong>Organized CSS</strong>: I consolidated and organized the CSS codebase, eliminating redundancy and improving the code's readability. This ensures easier maintenance and future scalability.</li>
+                    <li><strong>Comments and Documentation</strong>: I included comments within the HTML and CSS files to provide clear explanations of the code's purpose and functionality. This aids in collaboration and understanding for anyone working on the project.</li>
+                </ol>
+            </div>
+
+            <div class="project" id ="other-project-02">
+                <h2> Project placeholder 02</h2>
+                <img src="" alt="Image of a website project" class="#">
+                <h4>Project Overview</h4>
+                <p>In this project... </p>
+                <h4>Key Accomplishments</h4>
+                <ol>
+                    <li><strong>...</strong>: .</li>
+                    <li><strong>...</strong>: .</li>
+                    <li><strong>...</strong>: .</li>
+                </ol>
+            </div>
+
+            <div class="project" id="other-project-03">
+                <h2> Project placeholder 03</h2>
+                <img src="" alt="Image of a website project" class="#">
+                <h4>Project Overview</h4>
+                <p>In this project... </p>
+                <h4>Key Accomplishments</h4>
+                <ol>
+                    <li><strong>...</strong>: .</li>
+                    <li><strong>...</strong>: .</li>
+                    <li><strong>...</strong>: .</li>
+                </ol>
+            </div>
+            
         </section>
     </main>
 
-    <section class="card" id="Contact">
+    <section class="contact">
         <h2>Contact</h2>
         <a class="email" href="tedfleuriscat@outlook.com">tedfleuriscat@outlook.com</a>
     </section>
+
+    
     
     <footer>
-        <h3>Ted Fleuriscat</h2> <!--ADD LINK -->
-        <ul class="social-media-links">
-            <li><a href="######"> IG</a></li> 
-            <li><a href="######"> FB</a></li>
-            <li><a href="######"> In</a></li>
-        </ul>
         <p>© 2023 Ted Fleuriscat. All Rights Reserved.</p>
+            <ul class="social-media-links">
+                <li><a href="https://www.linkedin.com/in/ted-fleuriscat-945658250/" class="fa fa-linkedin"></a></li>
+                <li><a href="https://www.instagram.com/tedfl_/" class="fa fa-instagram"></a></li>
+                <li><a href="https://www.facebook.com/ted.fleuriscat" class="fa fa-facebook"></a></li>
+            </ul>
+        
+        
     </footer>
 
     <script src="assets/scripts/script.js"></script>
