@@ -7,7 +7,7 @@ This is my personal portfolio website that showcases my skills, projects, and pr
 
 ## Demo
 
-You can see a live demo of the website [here](ADD URL).
+You can see a live demo of the website [here](https://tedfl.github.io/02-portfolio/).
 
 ## Features
 
